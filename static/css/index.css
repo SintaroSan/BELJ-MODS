@@ -1,0 +1,40 @@
+ul{
+    list-style: none;
+}
+.tiles_list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(184px,1fr));
+    grid-gap: 24px 10px;
+    gap: 24px 10px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.tiles_list li{
+    list-style: none;
+    display: list-item;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: inherit;
+}
+.game_title{
+    list-style: none;
+    width: 184px;
+    display: grid;
+    grid-template-areas: "art" "title";
+}
+.game_title .art{
+    grid-area: art;
+    position: relative;
+    cursor: pointer;
+    width: 184px;
+    height: 231px;
+}
+.game_tile h3 {
+    grid-area: title;
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}

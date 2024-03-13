@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="JZ">
+        <meta name="description" content="test">
+        <meta name="keywords" content="test,css,html">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>создатель модпаков</title>
+        <link rel="stylesheet" href="static/css/creator.css">
+    </head>
+    <body>
+        <header>
+            <table width="100%" height="50px" border="1">
+                <body>
+                    <tr>
+                        <td><a href="index.html">Главная страница</a></td>
+                        <td><a href="modpacks.html">Все модпаки</a></td>
+                        <td><a href="creator.html">Добавить модпак</a></td>
+                        <td><a href="smk.html" title="СМК">Лучший майнкрфат сервер</a></td>
+                        <td><a href="belj_games_studio.html">Проекты нашей студии</a></td>
+                    </tr>
+                </body>
+            </table>
+        </header><br>
+        <main>
+            <form action="" method="post">
+                <label for="game_name">Игра для которой создан модпак</label>
+                <select type="text" id="game_name" required>
+                    <option>Minecraft</option>
+                    <option>Project Zomboid</option>
+                    <option>Lethal Company</option>
+                    <option>Rimworld</option>
+                    <option>Stardew Valley</option>
+                    <option>7 Days To Die</option>
+                    <option>GTA 6</option>
+                    <option selected>Прочее</option>
+                </select><br>
+                <label for="game_version">Поддерживаемые версии игры</label>
+                <input type="text" id="game_version" required minlength="3"><br><br>
+                <label for="author_name">Имя автора</label>
+                <input type="text" id="author_name" required minlength="3"><br>
+                <label for="author_password">Пароль автора</label>
+                <input type="password" id="author_password" required minlength="5"><br><br>
+                <label for="modpack_name" >Название модпака</label>
+                <input type="text" id="modpack_name" required minlength="5"><br><br>
+                <label for="modpack_icon">Лого модпака</label>
+                <input type="file" accept=".jpg,.jpeg,.png,.ico,.svg" id="modpack_icon"><br><br>
+                <label for="modpack_link" >Ссылка на скачивание модпака (желательно использовать <a href="https://drive.google.com" target="_blank">гугл диск</a>)</label>
+                <input type="url" id="modpack_link" required><br><br>
+                <label for="modpack_description">Описание (максимум 200 символов)</label><br>
+                <textarea id="modpack_description" maxlength="200"></textarea><br><br>
+                <input type="submit">
+            </form>
+        </main>
+    </body>
+</html>
