@@ -1,6 +1,42 @@
 body{
+    background-image: url(../img/mountains.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: blueviolet;
     margin: 0px;
 }
+header{
+    background-color: rgba(69, 54, 201, 0.801);
+}
+header table{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    max-width: 1400px;
+}
+header table td{
+    border: 2px solid silver;
+}
+header table td a{
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color:#fff;
+}
+header table td a div{
+    padding-top: 8px;
+}
 form{
-    margin: 10px;
+    margin-left: 20px;
+}
+textarea{
+    max-width: 60%;
+    min-width: 20%;
+    min-height: 30px;
+    max-height: 300px;
+    height: 100px;
+}
+form label{
+    line-height: 24px;
 }
