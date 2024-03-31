@@ -1,4 +1,4 @@
-body{
+/* body{
     background-image: url(../img/mountains.png);
     background-size: cover;
     background-position: top;
@@ -36,7 +36,7 @@ main{
     padding-top: 50px;
     display: block;
     min-height: 88.7vh;
-}
+} */
 .mod_link{
     text-decoration: none;
     color:#000;

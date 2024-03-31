@@ -1,4 +1,4 @@
-body{
+/* body{
     background-image: url(../img/mountains.png);
     background-size: cover;
     background-position: top;
@@ -37,7 +37,7 @@ main{
     display: block;
     min-height: 88.7vh;
 
-}
+} */
 main ul{
     list-style: none;
     display: block;

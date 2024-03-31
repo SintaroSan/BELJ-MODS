@@ -1,4 +1,4 @@
-/* body{
+body{
     background-image: url(../img/mountains.png);
     background-size: cover;
     background-position: top;
@@ -37,22 +37,4 @@ main{
     display: block;
     min-height: 88.7vh;
 
-} */
-.ad {
-    display: grid;
-    padding: 16px 16px 0;
-    grid-template-areas: "art . text";
-    grid-template-columns: 310px 12px;
-    max-width: 1100px;
-}
-.ad .text{
-    grid-area: text;
-    font-size: 19px;
-    line-height: 22px;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    color:#ffffff;
-}
-.ad .art{
-    width: 200px;
-    height: 200px;
 }
