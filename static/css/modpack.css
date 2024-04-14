@@ -1,0 +1,117 @@
+/* body{
+    background-image: url(../img/mountains.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: blueviolet;
+    margin: 0px;
+}
+header{
+    background-color: rgba(69, 54, 201, 0.801);
+}
+header table{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    max-width: 1400px;
+}
+header table td{
+    border: 2px solid silver;
+}
+header table td a{
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color:#fff;
+}
+header table td a div{
+    padding-top: 8px;
+}
+main{
+    max-width: 70%;
+    position: relative;
+    left: 15%;
+    background-color:rgba(0, 68, 156, 0.5);
+    box-shadow: 0 11px 10px 14px rgba(0, 68, 156, 0.5);
+    padding-top: 50px;
+    display: block;
+    min-height: 88.7vh;
+    color: #fff;
+} */
+main{
+    color: #fff;
+}
+.mod_tab {
+    display: grid;
+    padding: 10px 10px 10px 10px;
+    grid-template-areas: "art . text";
+    grid-template-columns: 130px 12px;
+    max-width: 50%;
+}
+.mod_tab .art {
+    width: 120px;
+    height: 120px;
+}
+.mod_tab .text .name {
+    grid-area: name;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 560px;
+    min-width: 0;
+}
+.mod_tab .text .author {
+    grid-area: author;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 560px;
+    min-width: 0;
+}
+.mod_tab .text .short_description {
+    grid-area: desc;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 560px;
+    min-width: 0;
+}
+.mod_tab .text .game_info{
+    grid-area: game;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 560px;
+    min-width: 0;
+}
+.mod_tab .text{
+    display: grid;
+    grid-template-areas: "name" "desc" "author" "game";
+    grid-template-rows: 30px 30px 30px 30px;
+    grid-template-columns: 600px;
+}
+h2{
+    font-size: 24px;
+}
+.description, .guide, .download{
+    max-width: 50%;
+    margin-left: 20px;
+}
+.download_button{
+    min-width: 100px;
+    font-family: inherit;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: rgb(142, 137, 236);
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #fff;
+}
+.download_button:hover{
+    background: rgb(122, 119, 209);
+}
+  
+.download_button:active{
+    outline: none;
+    box-shadow: 0 0 0 4px #bed6eb;
+}

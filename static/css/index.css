@@ -1,0 +1,85 @@
+/* body{
+    background-image: url(../img/mountains.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: blueviolet;
+    margin: 0px;
+}
+header{
+    background-color: rgba(69, 54, 201, 0.801);
+}
+header table{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    max-width: 1400px;
+}
+header table td{
+    border: 2px solid silver;
+}
+header table td a{
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color:#fff;
+}
+header table td a div{
+    padding-top: 8px;
+}
+main{
+    max-width: 70%;
+    position: relative;
+    left: 15%;
+    background-color:rgba(0, 68, 156, 0.5);
+    box-shadow: 0 11px 10px 14px rgba(0, 68, 156, 0.5);
+    padding-top: 50px;
+    display: block;
+    min-height: 88.7vh;
+
+} */
+main ul{
+    list-style: none;
+    display: block;
+}
+.tiles_list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 192px);
+    grid-gap: 24px 20px;
+    gap: 24px 10px;
+}
+.tiles_list li{
+    list-style: none;
+    display: list-item;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 4px solid silver;
+    border-radius: 4px;
+}
+.game_tile{
+    list-style: none;
+    width: 184px;
+    height: 260px;
+    display: grid;
+    grid-template-areas: "art" "title";
+}
+.game_tile .art{
+    grid-area: art;
+    position: relative;
+    cursor: pointer;
+    width: 184px;
+    height: 231px;
+}
+.game_tile h3 {
+    grid-area: title;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+.game_tile{
+    text-decoration: none;
+    color:#ffffff;
+}

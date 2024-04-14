@@ -1,0 +1,74 @@
+body{
+    background-image: url(../img/mountains.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: blueviolet;
+    margin: 0px;
+}
+header{
+    background-color: rgba(69, 54, 201, 0.801);
+}
+header table{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    max-width: 1400px;
+    border-collapse: initial;
+}
+header table td{
+    border: 2px solid silver;
+}
+header table td a{
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color:#fff;
+}
+header table td a div{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 8px;
+    line-height: normal;
+}
+form{
+    margin-left: 20px;
+}
+textarea{
+    max-width: 60%;
+    min-width: 20%;
+    min-height: 30px;
+    max-height: 300px;
+    height: 100px;
+}
+form label{
+    line-height: 28px;
+}
+.submit_button{
+    min-width: 100px;
+    font-family: inherit;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: rgb(142, 137, 236);
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #fff;
+}
+.submit_button:hover{
+    background: rgb(122, 119, 209);
+}
+  
+.submit_button:active{
+    outline: none;
+    box-shadow: 0 0 0 4px #bed6eb;
+}
+main{
+    max-width: 70%;
+    position: relative;
+    left: 15%;
+    line-height: 110%;
+}

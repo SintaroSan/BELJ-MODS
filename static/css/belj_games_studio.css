@@ -1,0 +1,68 @@
+/* body{
+    background-image: url(../img/mountains.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: blueviolet;
+    margin: 0px;
+}
+header{
+    background-color: rgba(69, 54, 201, 0.801);
+}
+header table{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    max-width: 1400px;
+}
+header table td{
+    border: 2px solid silver;
+}
+header table td a{
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color:#fff;
+}
+header table td a div{
+    padding-top: 8px;
+}
+main{
+    max-width: 70%;
+    position: relative;
+    left: 15%;
+    background-color:rgba(0, 68, 156, 0.5);
+    box-shadow: 0 11px 10px 14px rgba(0, 68, 156, 0.5);
+    padding-top: 50px;
+    display: block;
+    min-height: 88.7vh;
+
+} */
+.ad {
+    display: grid;
+    padding: 16px 16px 0;
+    grid-template-areas: "art . text";
+    grid-template-columns: 310px 12px;
+    max-width: 1100px;
+    min-height: 350px;
+}
+.ad .text{
+    grid-area: text;
+    font-size: 19px;
+    line-height: 22px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color:#ffffff;
+}
+.ad .art{
+    width: 200px;
+    height: 200px;
+}
+.ad .text h2{
+    line-height: 0%;
+    padding-bottom: 10px;
+    display: inline;
+}
+.ad .text h4{
+    line-height: 0%;
+    display: inline;
+}
