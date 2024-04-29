@@ -33,7 +33,7 @@
             {% if error %}
                 <h1>Такой модпак уже существует! Пожалуйста, измените название модпака</h1>
             {% endif %}
-            <form action="http://localhost:5000/creator" class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3" enctype="multipart/form-data" method="post">
+            <form action="../../creator" class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3" enctype="multipart/form-data" method="post">
                 <label for="game_name">Игра для которой создан модпак</label>
                 <select type="text" id="game_name" name="game_name" required>
                     <option>Minecraft</option>

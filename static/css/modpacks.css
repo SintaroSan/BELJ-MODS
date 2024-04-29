@@ -38,7 +38,6 @@
     grid-area: desc;
     font-size: 16px;
     line-height: 24px;
-    max-width: 560px;
     min-width: 0;
 }
 .mod_tab .text .game_info{
