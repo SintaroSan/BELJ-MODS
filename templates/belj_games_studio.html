@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="JZ">
+        <meta name="description" content="test">
+        <meta name="keywords" content="test,css,html">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Лучший майнкрфат сервер</title>
+        <link rel="icon" href="static/img/belj-mods-logo.png">
+        <link rel="stylesheet" href="static/css/base.css">
+        <link rel="stylesheet" href="static/css/belj_games_studio.css">
+    </head>
+    <body>
+        <header>
+            <table width="70%" height="60px" align="center">
+                <nav class="navbar navbar-light bg-light"></nav>
+                    <td><a href="/"><div>Главная страница</div></a></td>
+                    <td><a href="/modpacks"><div>Все модпаки</div></a></td>
+                    <td><a href="/smk" title="СМК"><div>Лучший майнкрфат сервер</div></a></td>
+                    <td><a href="/belj_games_studio"><div>Проекты нашей студии</div></a></td>
+                    {% if current_user.is_authenticated %}
+                        <td><a href="/creator"><div>Добавить модпак</div></a></td>
+                        <td><a href="/logout"><div>Выйти из аккаунта</div></a></td>
+                    {% else %}
+                        <td><a href="/register"><div>Зарегистрироваться</div></a></td>
+                        <td><a href="/login"><div>Войти</div></a></td>
+                    {% endif %}
+                </nav>
+            </table>
+        </header>
+        <main>
+            <div class="ad">
+                <div class="art">
+                    <img src="static/img/Mechanical Fighter.png" width="310px" alt="Mechanical Fighter">
+                </div>
+                <a class="text">
+                    <h2>Mechanical Fighter: Survival on an Alien Planet</h2><br><br>
+                    <h4>СТАТУС: Находится в разработке</h4><br>
+                    <h4>ЖАНРЫ: Рогалик, Экшен, Казуальная игра</h4><br><br>
+                    Истребитель №374529. Вам поступил новый приказ: "Отправляйтесь на планету PA-99-N2b с целью зачистки местности для постройки аванпоста."
+                    Именно после получения этого приказа и начинается ваше приключение на неизвестной планете, заселённой агрессивно настроенными существами.
+                    Уничтожайте врагов Галактической федерации, заказывайте улучшения для робота под вашим контролем и конечно же не задавайте вопросов.
+                </a>
+            </div>
+            <div class="ad">
+                <div class="art">
+                    <img src="static/img/Snow Express.png" width="310px" alt="Snow Express">
+                </div>
+                <a class="text">
+                    <h2>Snow Express</h2><br><br>
+                    <h4>СТАТУС: Находится на стадии проектирования</h4><br>
+                    <h4>ЖАНРЫ: Симулятор, Стратегия, Казуальная игра</h4><br><br>
+                    Буря, она пришла из ниоткуда и тут же установила свои правила. Теперь все обязаны жить по установленному сценарию, запершись внутри 
+                    городских купалов, но есть те, кто готов вырываться за рамки и заниматься перевозками между городами, рискуя своими жизнями. 
+                    Вы один из таких людей, вель вас всегда манила природа, бескрайние просторы полей, лесов, величественных гор. Проработав какое-то время 
+                    внутри города вы накапливаете на разраболтку и постройку собственного поезда, после чего отправляетесь работать вне города, колеся города, 
+                    страны, континенты, ну не мечта ли? Только вот одно не даёт вам покоя: "Почему буря практически не вредит природе, ведь флора и фауна всё 
+                    так же многообразна как и десятилетия назад?"
+                    
+                </a>
+            </div>
+        </main>
+    </body>
+</html>

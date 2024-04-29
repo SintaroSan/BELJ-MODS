@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content={{author_name}}>
+        <meta name="description" content="test">
+        <meta name="keywords" content="test,css,html">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{{mode_name}}</title>
+        <link rel="icon" href="../../static/img/belj-mods-logo.png">
+        <link rel="stylesheet" href="../../static/css/base.css">
+        <link rel="stylesheet" href="../../static/css/modpack.css">
+    </head>
+    <body>
+        <header>
+            <table width="70%" height="60px" align="center">
+                <nav class="navbar navbar-light bg-light"></nav>
+                    <td><a href="/"><div>Главная страница</div></a></td>
+                    <td><a href="/modpacks"><div>Все модпаки</div></a></td>
+                    <td><a href="/smk" title="СМК"><div>Лучший майнкрфат сервер</div></a></td>
+                    <td><a href="/belj_games_studio"><div>Проекты нашей студии</div></a></td>
+                    {% if current_user.is_authenticated %}
+                        <td><a href="/creator"><div>Добавить модпак</div></a></td>
+                        <td><a href="/logout"><div>Выйти из аккаунта</div></a></td>
+                    {% else %}
+                        <td><a href="/register"><div>Зарегистрироваться</div></a></td>
+                        <td><a href="/login"><div>Войти</div></a></td>
+                    {% endif %}
+                </nav>
+            </table>
+        </header>
+        <main align="center">
+            <div class="mod_tab" align="left">
+                <div class="art">
+                    <img src="../../{{mod.game_image}}" alt={{mod.visible_mod_name}} width="120" height="120">
+                </div>
+                <div class="text">
+                    <span class="name">{{mod.visible_mod_name}}</span>
+                    <span class="description">{{mod.description}}</span>
+                    <span class="author">by {{mod.author_name}}</span>
+                    <span class="game_info">for {{mod.visible_game_name}} Version: {{mod.game_version}}</span>
+                </div>
+            </div><br>
+            <div class="description" align="left">
+                <h2>Описание</h2>
+                <a>{{mod.about_mod}}</a>
+            </div><br>
+            <div class="guide" align="left">
+                <h2>Гайд по установке</h2>
+                <a>{{mod.download_guide}}</a>
+            </div><br>
+            <div class="download" align="left">
+                <button class="download_button" onclick="window.open('{{mod.game_link}}')">
+                    скачать
+                </button>
+            </div>
+        </main>
+    </body>
+</html>

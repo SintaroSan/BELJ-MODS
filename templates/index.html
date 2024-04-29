@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="JZ">
+        <meta name="description" content="test">
+        <meta name="keywords" content="test,css,html">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Главная страница</title>
+        <link rel="icon" href="static/img/belj-mods-logo.png">
+        <link rel="stylesheet" href="static/css/base.css">
+        <link rel="stylesheet" href="static/css/index.css">
+    </head>
+    <body>
+        <header>
+            <table width="70%" height="60px" align="center">
+                <nav class="navbar navbar-light bg-light"></nav>
+                    <td><a href="/"><div>Главная страница</div></a></td>
+                    <td><a href="/modpacks"><div>Все модпаки</div></a></td>
+                    <td><a href="/smk" title="СМК"><div>Лучший майнкрфат сервер</div></a></td>
+                    <td><a href="/belj_games_studio"><div>Проекты нашей студии</div></a></td>
+                    {% if current_user.is_authenticated %}
+                        <td><a href="/creator"><div>Добавить модпак</div></a></td>
+                        <td><a href="/logout"><div>Выйти из аккаунта</div></a></td>
+                    {% else %}
+                        <td><a href="/register"><div>Зарегистрироваться</div></a></td>
+                        <td><a href="/login"><div>Войти</div></a></td>
+                    {% endif %}
+                </nav>
+            </table>
+        </header>
+        <main>
+            <ul class="tiles_list" type="none">
+                <li>
+                    <a class=" game_tile" href="/minecraft">
+                        <div class="art">
+                            <img alt="Minecraft" src="https://static-cdn.jtvnw.net/ttv-boxart/Minecraft-285x380.jpg" width="184" height="231">
+                        </div>
+                        <h3 align="center">Minecraft</h3>
+                    </a>
+                </li>
+                <li>
+                    <a class=" game_tile" href="/rimworld">
+                        <div class="art">
+                            <img alt="Rimworld" src="https://media.forgecdn.net/game-box-art/4588_c621d118-dfed-428a-83a5-8d027160e365.png" width="184" height="231">
+                        </div>
+                        <h3 align="center">Rimworld</h3>
+                    </a>
+                </li>
+                <li>
+                    <a class=" game_tile" href="/lethal_company">
+                        <div class="art">
+                            <img alt="Lethal Company" src="https://staticdelivery.nexusmods.com/Images/games/4_3/tile_5848.jpg" width="184" height="231">
+                        </div>
+                        <h3 align="center">Lethal Company</h3>
+                    </a>
+                </li>
+                <li>
+                    <a class=" game_tile" href="/project_zomboid">
+                        <div class="art">
+                            <img alt="Project Zomboid" src="https://staticdelivery.nexusmods.com/Images/games/4_3/tile_583.jpg" width="184" height="231">
+                        </div>
+                        <h3 align="center">Project Zomboid</h3>
+                    </a>
+                </li>
+                <li>
+                    <a class=" game_tile" href="/stardew_valley">
+                        <div class="art">
+                            <img alt="Stardew Valley" src="https://media.forgecdn.net/game-tiles/Stardew+Valley+Tile.jpg" width="184" height="231">
+                        </div>
+                        <h3 align="center">Stardew Valley</h3>
+                    </a>
+                </li>
+                <li>
+                    <a class=" game_tile" href="/7_days_to_die">
+                        <div class="art">
+                            <img alt="7 Days To Die" src="https://media.forgecdn.net/game-box-art/540_a36ac8de-f300-461c-bd63-6bd6c22975c3.webp" width="184" height="231">
+                        </div>
+                        <h3 align="center">7 Days To Die</h3>
+                    </a>
+                </li>
+                <li>
+                    <a class=" game_tile" href="/content_warning">
+                        <div class="art">
+                            <img alt="Content Warning" src="https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6301.jpg" width="184" height="231">
+                        </div>
+                        <h3 align="center">Content Warning</h3>
+                    </a>
+                </li>
+                <li>
+                    <a class=" game_tile" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                        <div class="art">
+                            <img alt="GTA VI" src="https://staticdelivery.nexusmods.com/Images/games/4_3/tile_253.jpg" width="184" height="231">
+                        </div>
+                        <h3 align="center">GTA VI</h3>
+                    </a>
+                </li>
+            </ul>
+        </main>
+    </body>
+</html>

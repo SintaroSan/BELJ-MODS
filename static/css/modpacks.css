@@ -1,0 +1,56 @@
+.mod_link{
+    text-decoration: none;
+    color:#000;
+}
+.mod_tab {
+    display: grid;
+    position: relative;
+    left: -20px;
+    padding: 10px 10px 10px 10px;
+    grid-template-areas: "art . text";
+    grid-template-columns: 130px 12px;
+    background-color: rgb(142, 137, 236);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.mod_tab:hover{
+    background-color: rgb(122, 119, 209);
+}
+.mod_tab .art {
+    width: 120px;
+    height: 120px;
+}
+.mod_tab .text .name {
+    grid-area: name;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 560px;
+    min-width: 0;
+}
+.mod_tab .text .author {
+    grid-area: author;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 560px;
+    min-width: 0;
+}
+.mod_tab .text .description {
+    grid-area: desc;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 560px;
+    min-width: 0;
+}
+.mod_tab .text .game_info{
+    grid-area: game;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 560px;
+    min-width: 0;
+}
+.mod_tab .text{
+    display: grid;
+    grid-template-areas: "name" "desc" "author" "game";
+    grid-template-rows: 30px 30px 30px 30px;
+    grid-template-columns: 600px;
+}
