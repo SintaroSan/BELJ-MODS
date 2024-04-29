@@ -16,35 +16,35 @@ main{
     grid-area: name;
     font-size: 20px;
     line-height: 24px;
-    max-width: 560px;
+    max-width: 900px;
     min-width: 0;
 }
 .mod_tab .text .author {
     grid-area: author;
     font-size: 20px;
     line-height: 24px;
-    max-width: 560px;
+    max-width: 900px;
     min-width: 0;
 }
 .mod_tab .text .short_description {
     grid-area: desc;
     font-size: 16px;
     line-height: 24px;
-    max-width: 560px;
+    max-width: 900px;
     min-width: 0;
 }
 .mod_tab .text .game_info{
     grid-area: game;
     font-size: 20px;
     line-height: 24px;
-    max-width: 560px;
+    max-width: 900px;
     min-width: 0;
 }
 .mod_tab .text{
     display: grid;
     grid-template-areas: "name" "desc" "author" "game";
     grid-template-rows: 30px 30px 30px 30px;
-    grid-template-columns: 600px;
+    grid-template-columns: 900px;
 }
 h2{
     font-size: 24px;
